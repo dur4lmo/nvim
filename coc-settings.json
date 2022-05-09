@@ -1,0 +1,29 @@
+{
+	"hover.target": "float",
+	"hover.autoHide": true,
+	"session.directory": "~/AppData/Local/nvim/session/",
+	"colors.filetypes": ["*"],
+	"diagnostic.enableSign": true,
+	"diagnostic.warningSign": "⚠",
+	"diagnostic.errorSign": "",
+	"diagnostic.infoSign": "",
+	"diagnostic.format": "[%source%code] [%severity] %message",
+
+	"languageserver": {
+	  "clangd": {
+	    "command": "clangd",
+	    "rootPatterns": ["compile_flags.txt", "build/compile_commands.json"],
+	    "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]
+	  }
+	},
+	"explorer.icon.source": "vim-devicons",
+	"explorer.toggle": true,
+	"explorer.diagnostic.displayMax": 99,
+	"explorer.diagnostic.enableSubscriptNumber": true,
+	"explorer.icon.enableNerdfont": true,
+	"explorer.expandStores": true,
+	"explorer.mouseMode": "doubleclick",
+	"explorer.buffer.tabOnly": false,
+	"explorer.buffer.showHiddenBuffers": true
+	
+}
