@@ -14,7 +14,17 @@
 	    "command": "clangd",
 	    "rootPatterns": ["compile_flags.txt", "build/compile_commands.json"],
 	    "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]
-	  }
+	  },
+    "cmake": {
+      "command": "cmake-language-server",
+      "filetypes": ["cmake"],
+      "rootPatterns": [
+        "build/"
+      ],
+      "initializationOptions": {
+        "buildDirectory": "build"
+      }
+  }
 	},
 	"explorer.icon.source": "vim-devicons",
 	"explorer.toggle": true,

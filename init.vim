@@ -1,6 +1,6 @@
 call plug#begin()
 	
-	Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }	
+"Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }	
 
 	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 	
@@ -39,7 +39,7 @@ call plug#begin()
 	Plug 'puremourning/vimspector'
 
 call plug#end()
-
+let g:airline_powerline_fonts = 1
 
 
 set shiftwidth=3
@@ -50,7 +50,6 @@ set number
 
 set relativenumber
 
-set guifont=JetBrainsMono\ NF:h14
 
 set clipboard+=unnamedplus
 
@@ -97,9 +96,15 @@ let g:neovide_cursor_vfx_partical_lifetime=1.7
 let g:neovide_cursor_vfx_partical_density=22.0
 let g:neovide_cursor_vfx_partical_phase=1.5
 let g:neovide_cursor_vfx_particle_curl=1.0
+if !exists('g:airline_symbols')
+   let g:airline_symbols = {}
+endif
+
 let g:airline_theme="onedark"
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts=1
+let g:airline_powerline=1
+
+
 
 "*********************Keybindings*****************************"
 
